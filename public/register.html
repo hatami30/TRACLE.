@@ -8,11 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Login</title>
+    <title>Register</title>
 </head>
 
 <body>
-    <section class="bg-gradient-to-br from-green-200 to-green-500">
+    <section class="bg-gradient-to-br from-green-200 to-green-500 h-screen">
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
             <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
                 <img class="w-16 cursor-pointer" src="https://img.icons8.com/?size=512&id=13446&format=png" alt="logo">
@@ -23,9 +23,17 @@
                 <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                     <h1
                         class="text-center text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-black">
-                        Masuk ke akun Anda
+                        Daftar akun
                     </h1>
                     <form class="space-y-4 md:space-y-6" action="#">
+                        <div>
+                            <label for="name"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Masukkan
+                                nama</label>
+                            <input type="text" name="text" id="text"
+                                class="bg-gray-100 border border-gray-300 text-gray-400 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-200 dark:placeholder-gray-500 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                                placeholder="Isi username Anda" required="">
+                        </div>
                         <div>
                             <label for="email"
                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Masukkan
@@ -41,6 +49,14 @@
                                 class="bg-gray-100 border border-gray-300 text-gray-400 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-200 dark:placeholder-gray-500 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
                                 required="">
                         </div>
+                        <div>
+                            <label for="password"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Konfirmasi
+                                Sandi</label>
+                            <input type="password" name="password" id="password" placeholder="••••••••"
+                                class="bg-gray-100 border border-gray-300 text-gray-400 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-200 dark:placeholder-gray-500 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                                required="">
+                        </div>
                         <div class="flex items-center justify-between">
                             <div class="flex items-start">
                                 <div class="flex items-center h-5">
@@ -49,19 +65,13 @@
                                         required="">
                                 </div>
                                 <div class="ml-3 text-sm">
-                                    <label for="remember" class="text-gray-500 dark:text-gray-300">Ingat saya</label>
+                                    <label for="remember" class="text-gray-500 dark:text-gray-300">Saya setuju dengan
+                                        Syarat & Ketentuan dan Kebijakan Privasi.</label>
                                 </div>
                             </div>
-                            <a href="#"
-                                class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500 text-green-500">Lupa
-                                sandi?</a>
                         </div>
                         <a href="" type="submit"
-                            class="w-full text-white bg-green-400 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Masuk</a>
-                        <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                            Belum memiliki akun? <a href="./register.html"
-                                class="font-medium text-primary-600 hover:underline dark:text-green-500">Buat akun</a>
-                        </p>
+                            class="w-full text-white bg-green-400 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Daftar</a>
                     </form>
                 </div>
             </div>
