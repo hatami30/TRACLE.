@@ -33,4 +33,3 @@ function login() {
         alert("Invalid username or password. Please try again.");
     }
 }
-
